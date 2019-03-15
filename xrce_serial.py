@@ -157,6 +157,7 @@ class Client:
         print("xrce_msg:\n"+str(bytes_to_hex_str(xrce_msg)))
 
         # serial transport header
+        # # https://issues.omg.org/issues/spec/DDS-XRCE/1.0b1#issue-44481
         shdr = bytearray()
         shdr.append(0x01) # local addr
         shdr.append(0x00) # remote addr
